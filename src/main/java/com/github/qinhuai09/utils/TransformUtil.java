@@ -8,7 +8,7 @@ import java.util.List;
 /**
  * 数据转换工具类,可将bean的属性相互复制
  */
-public class DataTransformUtil<T1, T2> {
+public class TransformUtil<T1, T2> {
 
     /**
      * 将source属性的值复制给target
@@ -27,14 +27,14 @@ public class DataTransformUtil<T1, T2> {
     }
 
     /**
-     * 将sources属性的值复制给targets
+     * 批量将sources属性的值复制给targets
      *
      * @param sources
      * @param <T1>
      * @param <T2>
      * @return
      */
-    public static <T1, T2> List<T2> transformList(List<T1> sources, Class<T2> classObj) {
+    public static <T1, T2> List<T2> transforms(List<T1> sources, Class<T2> classObj) {
         List<T2> targets = new ArrayList<T2>();
         try {
             for (T1 source : sources) {
