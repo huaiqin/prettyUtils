@@ -18,12 +18,22 @@
         <java.compiler.version>1.7</java.compiler.version>
     </properties>
 
-    <distributionManagement>
+    <repositories>
         <repository>
             <id>aliyunmaven</id>
             <url>http://maven.aliyun.com/nexus/content/groups/public/</url>
         </repository>
-    </distributionManagement>
+    </repositories>
+
+    <dependencies>
+
+        <dependency>
+            <groupId>commons-beanutils</groupId>
+            <artifactId>commons-beanutils</artifactId>
+            <version>1.9.2</version>
+        </dependency>
+
+    </dependencies>
 
 
     <build>
